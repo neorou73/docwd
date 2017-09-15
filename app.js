@@ -43,4 +43,29 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+// load docwd configuration file, check for config.json first, if not use config.default.json
+var docwdConfig = require('./config.default.json');
+var pg = require('pg');
+
+// console.log(docwdConfig['database']['host']); // test that this is read properly
+const { Pool,  Client } = require('pg');
+const dbuser = docwdConfig['database']['user'];
+const dbpassword = docwdConfig['database']['password'];
+const dbhost = docwdConfig['database']['host'];
+const dbport = docwdConfig['database']['port'];
+const dbname = 'docwd';
+
+// const connectionString = 'postgresql://dbuser:secretpassword@database.server.com:3211/mydb'
+const connectionString = 'postgresql://' + dbuser + ':' + dbpassword + '@' + dbhost + ':' + dbport + '/' + dbname;
+
+//const pgpool = new Pool({
+//  connectionString: connectionString,
+// });
+
+const pgclient = new Client({
+  connectionString: connectionString,
+});
+
+// to connect simply do pgclient.connect();
+
 module.exports = app;

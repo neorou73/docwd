@@ -1,0 +1,23 @@
+body, p, ul, li p, li {
+  font-family: Georgia, sans-serif;
+}
+div#header {}
+div.header-navigation {}
+div#main-body {}
+div.body-title {}
+div.body-content {}
+p, li {
+  font-size: 12px;
+}
+p.page-title {
+  font-family: Times, serif;
+  font-size: 19px;
+}
+pre {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 13px;
+  line-height: 1.75;
+}
+div#footer {}
+div.footer-notification {}
+div.footer-navigation {}

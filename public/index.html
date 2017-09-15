@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div id="header">
+      <div class="header-navigation">
+        <p>
+          <ul>
+            <li><a href="index.html">welcome</a></li>
+            <li><a href="page1.html">page 1</a></li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div id="main-body">
+      <div class="body-title"><p class="page-title">Welcome</p></div>
+      <div class="body-content">
+        <p>I need a place on the Internet to publish my essays, notes and a portal to publish other products of my interest. Many years ago, I tried WordPress, and was none too impressed with it. I thought I would give it another go.</p>
+        <p>So, here we go.</p>
+        <hr/>
+        <p>To output a create statement for a table in an operational database, one with appropriate and valid permissions can do the following:</p>
+        <p><pre>
+          pg_dump -t 'yourSchema.yourTableName' --schema-only yourDatabase > /path/to/filename.sql
+        </pre></p>
+        <p>This is especially useful for incremental backups of changing operational database.</p>
+        <hr/>
+        <p>To list installed packages:</p>
+        <p><pre>
+          sudo apt list --installed
+        </pre></p>
+        <p>To update:</p>
+        <p><pre>
+          sudo apt update
+        </pre></p>
+        <p>To upgrade:</p>
+        <p><pre>
+          sudo apt upgrade -y
+        </pre></p>
+        <hr/>
+        <p>I use Vim 6+. I like to have basic things set up on vim to get going. Often though, I do not remember the setting commands. Simple things like syntax highlighting, auto-numbering of file lines, auto indentation, tab expansion and tab width in character spaces.</p>
+        <p>After installing vim on your UNIX/Linux machine, go to your home directory and edit or create the new .vimrc file:</p>
+        <p><pre>
+          user@machine:~$ cd &and;&and; vim .vimrc
+        </pre></p>
+        <p>Below is what I enter to get started:</p>
+        <p><pre>
+          :set syntax=on
+          :set number
+          :set autoindent
+          :set expandtab
+          :set shiftwidth=2
+          :set softtabstop=2
+        </pre></p>
+        <hr/>
+        <p>One will need to ensure that compiler and development SSL library is available before specifying nvm installation in Ubuntu 14.04/16.04 LTS.</p>
+        <p><pre>
+          sudo apt install build-essential libssl-dev
+        </pre></p>
+        <p>Then get the package and install</p>
+        <p><pre>
+          curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | sudo bash
+        </pre></p>
+        <p>After that, exit out of user account and login again. See if you can install a specific version of node js, let’s say 6.10.0. You can see what is available by issuing:</p>
+        <p></pre>
+          nvm ls-remote
+        </pre></p>
+        <p>You should see all available version, including 6.10.0. To install:</p>
+        <p><pre>
+          nvm install 6.10.0
+          nvm use 6.10.0
+        </pre></p>
+        <p>Get some help by issuing</p>
+        <p><pre>
+          nvm help
+        </pre></p>
+        <p>If you want multiple versions, install the other versions as necessary using the steps above. Would be good to select a default. If we want to default to 6.10.0 do the following:</p>
+        <p><pre>
+          nvm alias default 6.10.0
+        </pre></p>
+        <hr/>
+        <p>Often all I need is to find matches in a group of files of a single pattern. But I always forget the grep command for it. This does not come up very often – that’s probably why. In any case, thank you intarwebs for allowing me to have this cheat sheet that is my blog.</p>
+        <p>The line is:</p>
+        <p><pre>
+          grep -Riln "pattern-to-search" "path-to-search-directory"
+        </pre></p>
+        <p>-R is dereference-recursive option, where the search recurses into subdirectories but follows symlinks (use -r if no follow symlinks).</p>
+        <p>-i ignores case or searches case-insensitive</p>
+        <p>-l prints only files with pattern search matches</p>
+        <p>-n prints line numbers with output lines</p>
+        <hr/>
+      </div>
+      <div class="body-feed">
+        <div><a class="twitter-timeline" href="https://twitter.com/oxinatalks">Tweets by oxinatalks</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+        <p>Instagram</p>
+        <p>?</p>
+      </div>
+      <div class="body-content">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="footer-notification">Welcome</div>
+      <div class="header-navigation">
+        <ul>
+          <li>contact</li>
+          <li>about</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

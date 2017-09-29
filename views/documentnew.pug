@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div
+    form(name="new-document", method="post", action="/documents/new")
+      div.input
+        span.label Title
+        input(type="text", name="documentTitle")
+      div.input
+        span.label Narrative
+        textarea(name="documentData", cols="40", rows="15")
+      div.actions
+        input(type="submit", value="save")

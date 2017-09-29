@@ -76,6 +76,7 @@ CREATE TABLE documentmd (
     ownerid integer,
     mddata text,
     title text,
+    published boolean,
     created timestamp without time zone DEFAULT now() NOT NULL
 );
 
